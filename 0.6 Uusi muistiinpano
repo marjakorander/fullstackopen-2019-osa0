@@ -1,0 +1,11 @@
+note over selain:
+Käyttäjä kirjoittaa muistiinpanon ja painaa Tallenna-nappia
+end note
+
+selain->palvelin: selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+palvelin-->selain: 201 Created
+
+note over selain:
+selain suorittaa tapahtumankäsittelijän
+joka renderöi muistiinpanot näytölle
+end note
